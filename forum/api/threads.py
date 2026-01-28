@@ -381,7 +381,7 @@ def get_user_threads(
         "page": int(page) if page else None,
         "per_page": int(per_page) if per_page else None,
         "request_id": request_id,
-        "commentable_ids": commentable_ids,
+        "commentable_ids": commentable_ids.split(",") if commentable_ids else None,
         "user_id": user_id,
         "group_id": group_id,
         "group_ids": group_ids,
