@@ -138,7 +138,7 @@ def retire_user(
     backend.update_user(
         user_id,
         data={
-            "email": "",
+            "email": f"{retired_username}@retired.invalid",
             "username": retired_username,
             "read_states": [],
         },
